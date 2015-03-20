@@ -1,0 +1,20 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ include file="$(SolutionDir)\TextTemplates\TypeAnalyzer.ttinclude" #>
+<#@ include file="$(SolutionDir)\TextTemplates\ViewModel.ttinclude" #>
+<#@ output extension=".txt" #>
+<#
+    Init();
+    
+    var services = new[]{
+           "File",
+            };
+
+    foreach(var service in services)
+    {
+#><%@ ServiceHost Language="C#" Debug="true" Service="Nikos.One.Services.<#= service #>Service" %>   
+<#
+        WriteToFile(service + ".svc");
+    }
+
+Cleanup();
+#>

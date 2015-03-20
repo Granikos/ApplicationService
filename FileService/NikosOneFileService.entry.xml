@@ -1,0 +1,76 @@
+
+  <entry type="application">
+    <productId>GranikosNikosOneFileService</productId>
+    <metadata>
+      <title>Nikos One File Service</title>
+      <summary>The file service for Nikos One. This package will be installed automatically.</summary>
+      <longSummary>The Nikos One File Service is installed automatically during the installation of Nikos One.
+      </longSummary>
+      <keywords>
+        <keywordId>ecommerce</keywordId>
+      </keywords>
+
+      <version>1.0</version>
+
+      <updated>2014-09-22T18:30:02Z</updated>
+      <published>2014-09-22T18:30:02Z</published>
+
+      <author>
+        <name>Granikos</name>
+        <uri>http://www.granikos.eu</uri>
+      </author>
+      
+      <images>
+        <!--<icon>http://localhost:46369/Nikos One File Service.ico</icon>-->
+        <relativeIconUrl>packages/NikosOneFileService.ico</relativeIconUrl>
+      </images>
+    </metadata>
+
+    <installers>
+      <installer>
+        <id>1</id>
+        <installerFile>
+          <fileSize>4509</fileSize>
+          <!--<installerUrl>http://localhost:46369/Nikos One File Service.zip</installerUrl>-->
+          <relativeInstallerURL>packages/NikosOneFileService.zip</relativeInstallerURL>
+          <sha1>4D158A9DE768811BE31B738374A2FB1B097F15C1</sha1>
+        </installerFile>
+        <msDeploy>
+          <startPage />
+        </msDeploy>
+      </installer>
+    </installers>
+
+    <dependency>
+      <and>
+        <or>
+          <dependency>
+            <productId>IIS51</productId>
+          </dependency>
+          <dependency>
+            <productId>IIS7</productId>
+          </dependency>
+          <dependency>
+            <productId>IISExpress</productId>
+          </dependency>
+        </or>
+        <dependency>
+          <productId>NETFramework45</productId>
+        </dependency>
+        <dependency>
+          <productId>ASPNET45</productId>
+        </dependency>
+        <dependency>
+          <productId>ASPNET_REGIIS_NET4</productId>
+        </dependency>
+        <dependency>
+          <productId>SQLExpress</productId>
+        </dependency>
+        <dependency>
+          <productId>WDeployNoSMO</productId>
+        </dependency>
+        
+      </and>
+    </dependency>
+    
+  </entry>

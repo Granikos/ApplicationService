@@ -1,0 +1,84 @@
+
+  <entry type="application">
+    <productId>GranikosNikosOne</productId>
+    <metadata>
+      <title>Nikos One</title>
+      <summary>The integratable shopping cart and order processing platform.</summary>
+      <longSummary>
+        The integratable shopping cart and order processing platform.
+
+Seamlessly integrate shopping cart functionality to your existing business back-end and customer front-end.
+Connect external systems (e.g. your ERP and CRM or a database) to retrieve catalog or user data or to process customer orders. Add the shopping cart functionality to new or existing websites, enterprise applications or mobile apps.
+
+Nikos One is very flexible and easy to configure. Add required functionality through a fine-grained plug-ins system to ensure optimal fit to your requirements.
+
+Nikos One can be installed on-premise and on Windows Azure or other hosted servers. It supports complex server-farm and load-balancing configurations but can simply run in one web site on one server as well.
+      </longSummary>
+      <keywords>
+        <keywordId>ecommerce</keywordId>
+      </keywords>
+
+      <version>1.0</version>
+      <images>
+        <!--<icon>http://localhost:46369/icon.ico</icon>-->
+        <relativeIconUrl>NikosOne\icon.ico</relativeIconUrl>
+      </images>
+
+      <updated>2014-09-22T18:30:02Z</updated>
+      <published>2014-09-22T18:30:02Z</published>
+
+      <author>
+        <name>Granikos</name>
+        <uri>http://www.granikos.eu</uri>
+      </author>
+    </metadata>
+
+    <dependency>
+      <and>
+        <or>
+          <dependency>
+            <productId>IIS51</productId>
+          </dependency>
+          <dependency>
+            <productId>IIS7</productId>
+          </dependency>
+        </or>
+        <dependency>
+          <productId>NETFramework45</productId>
+        </dependency>
+        <dependency>
+          <productId>SQLExpress</productId>
+        </dependency>
+        <dependency>
+          <productId>WDeploy</productId>
+        </dependency>
+        <!--<dependency>
+          <productId>NetFxExtensibility45</productId>
+        </dependency>
+        <dependency>
+          <productId>ISAPIExtensions</productId>
+        </dependency>
+        <dependency>
+          <productId>ISAPIFilters</productId>
+        </dependency>
+        <dependency>
+          <productId>ASPNET45</productId>
+        </dependency>-->
+      </and>
+    </dependency>
+
+    <installers>
+      <installer>
+        <id>1</id>
+        <installerFile>
+          <fileSize>8000</fileSize>
+          <!--<installerUrl>http://localhost:46369/package.zip</installerUrl>-->
+          <relativeInstallerURL>nikosone/package.zip</relativeInstallerURL>
+          <sha1>B21A82D99D72EB2CF3BA4E9D3608AF01417AF75D</sha1>
+        </installerFile>
+        <msDeploy>
+          <startPage />
+        </msDeploy>
+      </installer>
+    </installers>
+  </entry>

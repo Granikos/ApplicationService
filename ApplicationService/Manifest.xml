@@ -1,0 +1,10 @@
+<MSDeploy.iisApp>
+  <iisapp path="NikosOne" 
+          managedRuntimeVersion="v4.0" 
+          MSDeploy.managedRuntimeVersion="2"
+          managedPipelineMode="Integrated" 
+          MSDeploy.managedPipelineMode="2"
+          />
+  <setAcl path="NikosOne" setAclAccess="Read" />
+  <setAcl path="NikosOne/Logs" setAclAccess="Modify" />
+</MSDeploy.iisApp>

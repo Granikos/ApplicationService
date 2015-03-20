@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>c:\tmp\nikosone\nikosone</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr4.Runtime.v4.5.dll">
+      <publishTime>10/02/2014 00:22:26</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>09/16/2014 21:42:11</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>09/16/2014 21:42:18</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>09/16/2014 21:42:23</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>09/16/2014 21:42:27</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>09/18/2014 22:59:01</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>09/18/2014 22:59:02</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>09/16/2014 21:42:11</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>09/16/2014 21:42:18</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>09/16/2014 21:42:23</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>09/16/2014 21:42:27</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>09/16/2014 21:42:11</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>09/16/2014 21:42:18</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>09/16/2014 21:42:23</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>09/16/2014 21:42:27</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>09/16/2014 21:43:00</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>09/16/2014 21:42:11</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>09/16/2014 21:42:18</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>09/16/2014 21:42:23</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>09/16/2014 21:42:27</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>09/16/2014 21:42:11</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>09/16/2014 21:42:18</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>09/16/2014 21:42:23</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>09/16/2014 21:42:27</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>09/16/2014 21:42:11</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>09/16/2014 21:42:18</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>09/16/2014 21:42:23</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>09/16/2014 21:42:27</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>09/16/2014 21:42:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>09/16/2014 21:43:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeAnalysis.dll">
+      <publishTime>09/16/2014 21:43:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>09/16/2014 21:42:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>09/16/2014 21:42:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Services.Client.dll">
+      <publishTime>09/16/2014 21:42:23</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Diagnostics.dll">
+      <publishTime>09/03/2014 18:38:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll">
+      <publishTime>09/03/2014 18:38:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.ServiceRuntime.dll">
+      <publishTime>09/03/2014 18:38:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Storage.dll">
+      <publishTime>09/16/2014 21:42:30</publishTime>
+    </File>
+    <File Include="bin/msshrtmi.dll">
+      <publishTime>09/03/2014 18:38:00</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>09/16/2014 22:03:33</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.CatalogService.dll">
+      <publishTime>12/06/2014 23:46:17</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.Client.dll">
+      <publishTime>12/06/2014 23:46:14</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.ConfigurationService.dll">
+      <publishTime>12/06/2014 23:46:18</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.DefaultImplementation.dll">
+      <publishTime>12/06/2014 23:46:15</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.dll">
+      <publishTime>12/06/2014 23:46:14</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.GlobalConfiguration.dll">
+      <publishTime>12/06/2014 23:46:15</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.GlobalConfigurationService.dll">
+      <publishTime>12/06/2014 23:46:17</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.InformationService.dll">
+      <publishTime>12/06/2014 23:46:17</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.LockingService.dll">
+      <publishTime>12/06/2014 23:46:17</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.Modules.DatabaseFileStore.dll">
+      <publishTime>12/06/2014 23:46:16</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.Modules.FileSystemFileStore.dll">
+      <publishTime>12/06/2014 23:46:16</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.Modules.SqlDataStore.dll">
+      <publishTime>12/06/2014 23:46:17</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.OrderService.dll">
+      <publishTime>12/06/2014 23:46:18</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.Scripting.dll">
+      <publishTime>12/06/2014 23:46:15</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.ServiceContracts.dll">
+      <publishTime>12/06/2014 22:52:30</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.ServiceModel.Client.dll">
+      <publishTime>12/06/2014 23:46:14</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.ServiceModel.dll">
+      <publishTime>12/06/2014 23:46:16</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.StoreConfigurationLanguage.dll">
+      <publishTime>10/02/2014 00:26:04</publishTime>
+    </File>
+    <File Include="bin/Nikos.Toolbelt.Azure.dll">
+      <publishTime>12/06/2014 22:52:32</publishTime>
+    </File>
+    <File Include="bin/Nikos.Toolbelt.Compilers.dll">
+      <publishTime>12/06/2014 22:52:31</publishTime>
+    </File>
+    <File Include="bin/Nikos.Toolbelt.dll">
+      <publishTime>12/06/2014 23:46:13</publishTime>
+    </File>
+    <File Include="bin/Nikos.Toolbelt.Loggers.Log4Net.dll">
+      <publishTime>12/06/2014 23:46:14</publishTime>
+    </File>
+    <File Include="bin/NikosOne.dll">
+      <publishTime>12/06/2014 23:46:19</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>09/16/2014 21:42:11</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>09/16/2014 21:42:18</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>09/16/2014 21:42:23</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>09/16/2014 21:42:27</publishTime>
+    </File>
+    <File Include="bin/System.Collections.Immutable.dll">
+      <publishTime>09/16/2014 21:43:01</publishTime>
+    </File>
+    <File Include="bin/System.Reflection.Metadata.dll">
+      <publishTime>09/16/2014 21:43:03</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>09/16/2014 21:42:27</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>09/16/2014 21:42:11</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>09/16/2014 21:42:18</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>09/16/2014 21:42:23</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>09/16/2014 21:42:27</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>09/16/2014 21:42:11</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>09/16/2014 21:42:18</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>09/16/2014 21:42:23</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>09/16/2014 21:42:27</publishTime>
+    </File>
+    <File Include="Catalog.svc">
+      <publishTime>11/09/2014 01:12:59</publishTime>
+    </File>
+    <File Include="GlobalConfiguration.svc">
+      <publishTime>11/09/2014 01:12:59</publishTime>
+    </File>
+    <File Include="Information.svc">
+      <publishTime>11/09/2014 01:12:59</publishTime>
+    </File>
+    <File Include="Locking.svc">
+      <publishTime>11/09/2014 01:12:59</publishTime>
+    </File>
+    <File Include="log4net.config">
+      <publishTime>09/16/2014 00:26:27</publishTime>
+    </File>
+    <File Include="Manifest.xml">
+      <publishTime>09/27/2014 00:20:40</publishTime>
+    </File>
+    <File Include="Order.svc">
+      <publishTime>11/09/2014 01:12:59</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/19/2014 14:55:40</publishTime>
+    </File>
+    <File Include="Script.svc">
+      <publishTime>11/09/2014 01:12:59</publishTime>
+    </File>
+    <File Include="Services.txt">
+      <publishTime>11/09/2014 01:12:59</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/06/2014 23:46:19</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

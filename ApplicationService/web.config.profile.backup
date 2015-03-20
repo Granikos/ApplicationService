@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="nikos" type="Nikos.Toolbelt.Configuration.ConfigurationSection, Nikos.Toolbelt" requirePermission="false" />
+  </configSections>
+
+  <system.net>
+    <defaultProxy>
+      <proxy
+              usesystemdefault="True"
+              bypassonlocal="False" />
+    </defaultProxy>
+  </system.net>
+
+  <nikos>
+    <data>
+      <SERVICEBASE>localhost:46369</SERVICEBASE>
+      <mode>dev</mode>
+      <defaultlocktimeout>00:15:00</defaultlocktimeout>
+      <pollingwaittime>00:00:10</pollingwaittime>
+      <pollinginstancecount>10</pollinginstancecount>
+      <cachetimeout>3</cachetimeout>
+      <stores>
+        <store>
+          <connectionstring providerName="System.Data.SqlClient" connectionString="Data Source=(Local)\sqlexpress;Initial Catalog=foodcity;Integrated Security=True; MultipleActiveResultSets=True;" />
+        </store>
+        <store name="carts">
+          <connectionstring providerName="System.Data.SqlClient" connectionString="Data Source=(Local)\sqlexpress;Initial Catalog=foodcity_carts;Integrated Security=True; MultipleActiveResultSets=True;" />
+        </store>
+      </stores>
+      <modelrepository>
+        <cartstore>carts</cartstore>
+      </modelrepository>
+      <filestoresettings>..\Components\Output</filestoresettings>
+      <composition>
+        <mappings>
+          <map interface="Nikos.Toolbelt.ILog, Nikos.Toolbelt" type="Nikos.Toolbelt.Loggers.Log4NetLogger, Nikos.Toolbelt.Loggers.Log4Net" />
+          <map interface="Nikos.One.Runtime.IPrincipalMapper, Nikos.One" type="Nikos.One.SimplePrincipalMapper, Nikos.One.DefaultImplementation" reuse="Singleton" />
+          <map interface="Nikos.One.Runtime.IModelRepository, Nikos.One" type="Nikos.One.Repositories.ModelRepository, Nikos.One.DefaultImplementation" />
+          <map interface="Nikos.One.Runtime.IConfigurationStore, Nikos.One" type="Nikos.One.Modules.SqlDataStore, Nikos.One.Modules.SqlDataStore" />
+          <map interface="Nikos.One.Runtime.IFileStore, Nikos.One" type="Nikos.One.Modules.FileSystemFileStore, Nikos.One.Modules.FileSystemFileStore" />
+        </mappings>
+      </composition>
+      <!-- TODO: move client configuration into own child element -->
+      <lockingserviceclientconfiguration>
+        <configuration>
+          <system.serviceModel>
+            <client>
+              <endpoint address="http://[SERVICEBASE]/Locking.svc" binding="basicHttpBinding" contract="Nikos.One.ServiceContracts.ILockingService" />
+            </client>
+          </system.serviceModel>
+        </configuration>
+      </lockingserviceclientconfiguration>
+      <catalogserviceclientconfiguration>
+        <configuration>
+          <system.serviceModel>
+            <bindings>
+              <basicHttpBinding>
+                <binding maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                  <security mode="TransportCredentialOnly">
+                    <transport clientCredentialType="Windows" />
+                  </security>
+                </binding>
+              </basicHttpBinding>
+            </bindings>
+            <client>
+              <endpoint address="http://[SERVICEBASE]/Catalog.svc" binding="basicHttpBinding" contract="Nikos.One.ServiceContracts.ICatalogService" />
+            </client>
+          </system.serviceModel>
+        </configuration>
+      </catalogserviceclientconfiguration>
+      <orderserviceclientconfiguration>
+        <configuration>
+          <system.serviceModel>
+            <bindings>
+              <basicHttpBinding>
+                <binding maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" receiveTimeout="00:10:00">
+                  <security mode="TransportCredentialOnly">
+                    <transport clientCredentialType="Windows" />
+                  </security>
+                </binding>
+              </basicHttpBinding>
+            </bindings>
+            <client>
+              <endpoint address="http://[SERVICEBASE]/Order.svc" binding="basicHttpBinding" contract="Nikos.One.ServiceContracts.IOrderService" />
+            </client>
+          </system.serviceModel>
+        </configuration>
+      </orderserviceclientconfiguration>
+      <globalconfigurationserviceclientconfiguration>
+        <configuration>
+          <system.serviceModel>
+            <bindings>
+              <basicHttpBinding>
+                <binding maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                  <security mode="TransportCredentialOnly">
+                    <transport clientCredentialType="Windows" />
+                  </security>
+                </binding>
+              </basicHttpBinding>
+            </bindings>
+            <client>
+              <endpoint address="http://[SERVICEBASE]/GlobalConfiguration.svc" binding="basicHttpBinding" contract="Nikos.One.ServiceContracts.IGlobalConfigurationService" />
+            </client>
+          </system.serviceModel>
+        </configuration>
+      </globalconfigurationserviceclientconfiguration>
+      <fileserviceclientconfiguration>
+        <configuration>
+          <system.serviceModel>
+            <bindings>
+              <basicHttpBinding>
+                <binding maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                  <security mode="TransportCredentialOnly">
+                    <transport clientCredentialType="Windows" />
+                  </security>
+                </binding>
+              </basicHttpBinding>
+            </bindings>
+            <client>
+              <endpoint address="http://[SERVICEBASE]/File.svc" binding="basicHttpBinding" contract="Nikos.One.ServiceContracts.IFileService" />
+            </client>
+          </system.serviceModel>
+        </configuration>
+      </fileserviceclientconfiguration>
+    </data>
+  </nikos>
+  <!--<system.diagnostics>
+    <sharedListeners>
+      <add name="AzureLocalStorage" type="SimpleAzureService.AzureLocalStorageTraceListener, SimpleAzureService, Version=1.0.0.0, Culture=neutral"/>
+    </sharedListeners>
+    <sources>
+      <source name="System.ServiceModel" switchValue="Verbose, ActivityTracing">
+        <listeners>
+          <add name="AzureLocalStorage"/>
+        </listeners>
+      </source>
+      <source name="System.ServiceModel.MessageLogging" switchValue="Verbose">
+        <listeners>
+          <add name="AzureLocalStorage"/>
+        </listeners>
+      </source>
+    </sources>
+    <trace>
+      <listeners>
+        <add type="Microsoft.WindowsAzure.Diagnostics.DiagnosticMonitorTraceListener, Microsoft.WindowsAzure.Diagnostics, Version=2.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+          name="AzureDiagnostics">
+          <filter type="" />
+        </add>
+      </listeners>
+    </trace>
+  </system.diagnostics>-->
+  <system.diagnostics>
+    <sources>
+      <source name="System.ServiceModel" switchValue="Information, ActivityTracing" propagateActivity="true">
+        <listeners>
+          <add name="xml" />
+        </listeners>
+      </source>
+      <source name="CardSpace">
+        <listeners>
+          <add name="xml" />
+        </listeners>
+      </source>
+      <source name="System.IO.Log">
+        <listeners>
+          <add name="xml" />
+        </listeners>
+      </source>
+      <source name="System.Runtime.Serialization">
+        <listeners>
+          <add name="xml" />
+        </listeners>
+      </source>
+      <source name="System.IdentityModel">
+        <listeners>
+          <add name="xml" />
+        </listeners>
+      </source>
+    </sources>
+    <sharedListeners>
+      <add name="xml" type="System.Diagnostics.XmlWriterTraceListener" initializeData="c:\tmp\kitty.svclog" />
+    </sharedListeners>
+  </system.diagnostics>
+  <system.web>
+    <compilation debug="true" targetFramework="4.5" />
+  </system.web>
+  <system.serviceModel>
+    <serviceHostingEnvironment multipleSiteBindingsEnabled="true" />
+    <behaviors>
+      <serviceBehaviors>
+        <behavior>
+          <serviceMetadata httpGetEnabled="true" />
+          <serviceDebug includeExceptionDetailInFaults="true" />
+        </behavior>
+      </serviceBehaviors>
+      <endpointBehaviors>
+        <behavior name="webHttp">
+          <webHttp defaultOutgoingResponseFormat="Json" />
+        </behavior>
+      </endpointBehaviors>
+    </behaviors>
+    <bindings>
+      <webHttpBinding>
+        <binding maxReceivedMessageSize="2147483647" />
+      </webHttpBinding>
+    </bindings>
+    <services>
+      <service name="Nikos.One.Services.ScriptService">
+        <endpoint address="web" binding="webHttpBinding" behaviorConfiguration="webHttp" contract="Nikos.One.ServiceContracts.IScriptService" />
+        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+      </service>
+    </services>
+  </system.serviceModel>
+  <system.webServer>
+    <modules runAllManagedModulesForAllRequests="true" />
+    <directoryBrowse enabled="true" />
+  </system.webServer>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Data.Edm" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.6.2.0" newVersion="5.6.2.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Data.Services.Client" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.6.2.0" newVersion="5.6.2.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Data.OData" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.6.2.0" newVersion="5.6.2.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Spatial" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.6.0.0" newVersion="5.6.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA052349-3073-4314-8ED6-630BD72DF845}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NikosOne</RootNamespace>
+    <AssemblyName>NikosOne</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
+    <IncludeIisSettings>true</IncludeIisSettings>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <IncludeAppPool>true</IncludeAppPool>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.6.3\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.OData.5.6.3\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.6.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Data.Services.Client.5.6.3\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WindowsAzure.Storage.4.3.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="msshrtmi, Version=2.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\msshrtmi.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Spatial, Version=5.6.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Spatial.5.6.3\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Catalog.svc">
+      <DependentUpon>Services.tt</DependentUpon>
+    </Content>
+    <Content Include="GlobalConfiguration.svc">
+      <DependentUpon>Services.tt</DependentUpon>
+    </Content>
+    <Content Include="Information.svc">
+      <DependentUpon>Services.tt</DependentUpon>
+    </Content>
+    <Content Include="Locking.svc">
+      <DependentUpon>Services.tt</DependentUpon>
+    </Content>
+    <Content Include="Manifest.xml" />
+    <Content Include="Order.svc">
+      <DependentUpon>Services.tt</DependentUpon>
+    </Content>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Script.svc">
+      <DependentUpon>Services.tt</DependentUpon>
+    </Content>
+    <Content Include="Services.txt">
+      <DependentUpon>Services.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\NikosOne.pubxml" />
+    <None Include="Services.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Services.txt</LastGenOutput>
+    </None>
+    <Content Include="log4net.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\InstallerPackage.pubxml" />
+    <None Include="Properties\PublishProfiles\SimpleFile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Components\Nikos.One.Modules.DatabaseFileStore\Nikos.One.Modules.DatabaseFileStore.csproj">
+      <Project>{258D3724-A90A-4655-9A25-57C68B15824B}</Project>
+      <Name>Nikos.One.Modules.DatabaseFileStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Components\Nikos.One.Modules.FileSystemFileStore\Nikos.One.Modules.FileSystemFileStore.csproj">
+      <Project>{67A7E94E-3772-4191-B36C-92C8B1A18D5C}</Project>
+      <Name>Nikos.One.Modules.FileSystemFileStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Components\Nikos.One.Modules.SqlDataStore\Nikos.One.Modules.SqlDataStore.csproj">
+      <Project>{29e4d351-2ee2-463c-8b06-283f4b79d092}</Project>
+      <Name>Nikos.One.Modules.SqlDataStore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nikos.One.DefaultImplementation\Nikos.One.DefaultImplementation.csproj">
+      <Project>{7a096d62-ff9b-4b45-b857-930e2fbf7577}</Project>
+      <Name>Nikos.One.DefaultImplementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nikos.One.Scl.Interpreters\Nikos.One.Scripting.csproj">
+      <Project>{56ea9db8-6b56-495d-aa5a-8e96ae8c61ff}</Project>
+      <Name>Nikos.One.Scripting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nikos.One.Templating.Razor\Nikos.One.Templating.Razor.csproj">
+      <Project>{49a7fe53-2498-4141-90d9-c31cc26ca792}</Project>
+      <Name>Nikos.One.Templating.Razor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nikos.One.Templating\Nikos.One.Templating.csproj">
+      <Project>{d774feae-ac53-45c6-86e3-762d877d45aa}</Project>
+      <Name>Nikos.One.Templating</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nikos.One\Nikos.One.csproj">
+      <Project>{65db8192-2e77-4c69-ac83-2b044496a355}</Project>
+      <Name>Nikos.One</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nikos.Toolbelt.Azure\Nikos.Toolbelt.Azure.csproj">
+      <Project>{f250ac02-e4b6-423f-96f0-a53d8486736e}</Project>
+      <Name>Nikos.Toolbelt.Azure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nikos.Toolbelt.Loggers.Log4Net\Nikos.Toolbelt.Loggers.Log4Net.csproj">
+      <Project>{cbd35d74-7629-4811-80cc-69f4a1091ea3}</Project>
+      <Name>Nikos.Toolbelt.Loggers.Log4Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nikos.Toolbelt\Nikos.Toolbelt.csproj">
+      <Project>{fe2c8525-514a-4802-aebe-15639ae39298}</Project>
+      <Name>Nikos.Toolbelt</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\WCF\Nikos.One.CatalogService\Nikos.One.CatalogService.csproj">
+      <Project>{5bf58d09-1054-4573-91bf-d29bd1e67c18}</Project>
+      <Name>Nikos.One.CatalogService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\WCF\Nikos.One.ConfigurationService\Nikos.One.ConfigurationService.csproj">
+      <Project>{ab899f31-1b47-40ce-ace2-bd742535c238}</Project>
+      <Name>Nikos.One.ConfigurationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\WCF\Nikos.One.GlobalConfigurationService\Nikos.One.GlobalConfigurationService.csproj">
+      <Project>{e1319832-1962-47a1-a290-30f4a59a5a38}</Project>
+      <Name>Nikos.One.GlobalConfigurationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\WCF\Nikos.One.InformationService\Nikos.One.InformationService.csproj">
+      <Project>{ddf202f9-b2f3-432b-b7b6-0d41785c0e20}</Project>
+      <Name>Nikos.One.InformationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\WCF\Nikos.One.LockingService\Nikos.One.LockingService.csproj">
+      <Project>{ce1942e1-f28e-4cb7-a96e-bdeae7f6b95a}</Project>
+      <Name>Nikos.One.LockingService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\WCF\Nikos.One.OrderService\Nikos.One.OrderService.csproj">
+      <Project>{5248ae1e-e03f-475e-a649-b7c8a432430f}</Project>
+      <Name>Nikos.One.OrderService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>48561</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48561/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\tmp\nikosone\nikosonefileservice</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>09/18/2014 22:59:01</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>09/18/2014 22:59:02</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>09/16/2014 21:43:00</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>09/16/2014 21:42:53</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>09/16/2014 21:43:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeAnalysis.dll">
+      <publishTime>09/16/2014 21:43:08</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.Client.dll">
+      <publishTime>11/14/2014 22:02:52</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.dll">
+      <publishTime>11/14/2014 22:02:53</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.FileService.dll">
+      <publishTime>11/14/2014 22:03:07</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.Modules.DatabaseFileStore.dll">
+      <publishTime>11/14/2014 22:03:06</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.Modules.FileSystemFileStore.dll">
+      <publishTime>11/14/2014 22:03:05</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.Modules.SqlDataStore.dll">
+      <publishTime>11/14/2014 22:03:06</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.ServiceContracts.dll">
+      <publishTime>11/13/2014 20:18:49</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.ServiceModel.Client.dll">
+      <publishTime>11/14/2014 22:02:52</publishTime>
+    </File>
+    <File Include="bin/Nikos.One.ServiceModel.dll">
+      <publishTime>11/14/2014 22:03:06</publishTime>
+    </File>
+    <File Include="bin/Nikos.Toolbelt.Compilers.dll">
+      <publishTime>10/02/2014 23:32:22</publishTime>
+    </File>
+    <File Include="bin/Nikos.Toolbelt.dll">
+      <publishTime>11/14/2014 22:02:51</publishTime>
+    </File>
+    <File Include="bin/Nikos.Toolbelt.Loggers.Log4Net.dll">
+      <publishTime>11/14/2014 22:03:02</publishTime>
+    </File>
+    <File Include="bin/NikosOneFileService.dll">
+      <publishTime>11/14/2014 22:03:18</publishTime>
+    </File>
+    <File Include="bin/System.Collections.Immutable.dll">
+      <publishTime>09/16/2014 21:43:01</publishTime>
+    </File>
+    <File Include="bin/System.Reflection.Metadata.dll">
+      <publishTime>09/16/2014 21:43:03</publishTime>
+    </File>
+    <File Include="File.svc">
+      <publishTime>11/09/2014 01:13:00</publishTime>
+    </File>
+    <File Include="log4net.config">
+      <publishTime>09/19/2014 01:12:00</publishTime>
+    </File>
+    <File Include="Manifest.xml">
+      <publishTime>10/17/2014 00:30:03</publishTime>
+    </File>
+    <File Include="NikosOneFileService.wpp.targets">
+      <publishTime>09/25/2014 22:38:40</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/19/2014 01:22:49</publishTime>
+    </File>
+    <File Include="Services.txt">
+      <publishTime>11/09/2014 01:13:00</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/14/2014 22:03:18</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
