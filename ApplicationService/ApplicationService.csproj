@@ -111,17 +111,38 @@
     <Reference Include="Nikos.One">
       <HintPath>..\packages\Nikos.One.1.0.5559.23566\lib\net451\Nikos.One.dll</HintPath>
     </Reference>
+    <Reference Include="Nikos.One.CatalogService">
+      <HintPath>..\packages\Nikos.One.CatalogService.1.0.0.0\lib\net451\Nikos.One.CatalogService.dll</HintPath>
+    </Reference>
     <Reference Include="Nikos.One.Client">
       <HintPath>..\packages\Nikos.One.Client.1.0.5559.23565\lib\net451\Nikos.One.Client.dll</HintPath>
     </Reference>
+    <Reference Include="Nikos.One.ConfigurationService">
+      <HintPath>..\packages\Nikos.One.ConfigurationService.1.0.0.0\lib\net451\Nikos.One.ConfigurationService.dll</HintPath>
+    </Reference>
     <Reference Include="Nikos.One.DefaultImplementation">
       <HintPath>..\packages\Nikos.One.DefaultImplementation.1.0.5559.23568\lib\net451\Nikos.One.DefaultImplementation.dll</HintPath>
+    </Reference>
+    <Reference Include="Nikos.One.GlobalConfiguration">
+      <HintPath>..\packages\Nikos.One.GlobalConfiguration.1.0.5559.23568\lib\net451\Nikos.One.GlobalConfiguration.dll</HintPath>
+    </Reference>
+    <Reference Include="Nikos.One.GlobalConfigurationService">
+      <HintPath>..\packages\Nikos.One.GlobalConfigurationService.1.0.0.0\lib\net451\Nikos.One.GlobalConfigurationService.dll</HintPath>
+    </Reference>
+    <Reference Include="Nikos.One.InformationService">
+      <HintPath>..\packages\Nikos.One.InformationService.1.0.0.0\lib\net451\Nikos.One.InformationService.dll</HintPath>
+    </Reference>
+    <Reference Include="Nikos.One.LockingService">
+      <HintPath>..\packages\Nikos.One.LockingService.1.0.0.0\lib\net451\Nikos.One.LockingService.dll</HintPath>
     </Reference>
     <Reference Include="Nikos.One.Modules.DatabaseFileStore">
       <HintPath>..\packages\Nikos.One.Modules.DatabaseFileStore.1.0.5559.23538\lib\net451\Nikos.One.Modules.DatabaseFileStore.dll</HintPath>
     </Reference>
     <Reference Include="Nikos.One.Modules.SqlDataStore">
       <HintPath>..\packages\Nikos.One.Modules.SqlDataStore.1.0.5559.23545\lib\net451\Nikos.One.Modules.SqlDataStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Nikos.One.OrderService">
+      <HintPath>..\packages\Nikos.One.OrderService.1.0.0.0\lib\net451\Nikos.One.OrderService.dll</HintPath>
     </Reference>
     <Reference Include="Nikos.One.Scripting">
       <HintPath>..\packages\Nikos.One.Scripting.1.0.5559.23569\lib\net451\Nikos.One.Scripting.dll</HintPath>
@@ -222,30 +243,6 @@
     <ProjectReference Include="..\Nikos.One.Templating.Razor\Nikos.One.Templating.Razor.csproj">
       <Project>{49a7fe53-2498-4141-90d9-c31cc26ca792}</Project>
       <Name>Nikos.One.Templating.Razor</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Services\WCF\Nikos.One.CatalogService\Nikos.One.CatalogService.csproj">
-      <Project>{5bf58d09-1054-4573-91bf-d29bd1e67c18}</Project>
-      <Name>Nikos.One.CatalogService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Services\WCF\Nikos.One.ConfigurationService\Nikos.One.ConfigurationService.csproj">
-      <Project>{ab899f31-1b47-40ce-ace2-bd742535c238}</Project>
-      <Name>Nikos.One.ConfigurationService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Services\WCF\Nikos.One.GlobalConfigurationService\Nikos.One.GlobalConfigurationService.csproj">
-      <Project>{e1319832-1962-47a1-a290-30f4a59a5a38}</Project>
-      <Name>Nikos.One.GlobalConfigurationService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Services\WCF\Nikos.One.InformationService\Nikos.One.InformationService.csproj">
-      <Project>{ddf202f9-b2f3-432b-b7b6-0d41785c0e20}</Project>
-      <Name>Nikos.One.InformationService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Services\WCF\Nikos.One.LockingService\Nikos.One.LockingService.csproj">
-      <Project>{ce1942e1-f28e-4cb7-a96e-bdeae7f6b95a}</Project>
-      <Name>Nikos.One.LockingService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Services\WCF\Nikos.One.OrderService\Nikos.One.OrderService.csproj">
-      <Project>{5248ae1e-e03f-475e-a649-b7c8a432430f}</Project>
-      <Name>Nikos.One.OrderService</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

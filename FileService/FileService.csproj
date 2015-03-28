@@ -51,6 +51,21 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\packages\Nikos.Toolbelt.1.0.5559.1494\lib\net451\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis">
+      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.5559.4317\lib\net451\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp">
+      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.5559.4317\lib\net451\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces">
+      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.5559.4317\lib\net451\Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Workspaces">
+      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.5559.4317\lib\net451\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp">
       <Private>True</Private>
     </Reference>
@@ -89,6 +104,27 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Nikos.One">
+      <HintPath>..\packages\Nikos.One.1.0.5559.23566\lib\net451\Nikos.One.dll</HintPath>
+    </Reference>
+    <Reference Include="Nikos.One.Client">
+      <HintPath>..\packages\Nikos.One.Client.1.0.5565.37413\lib\net451\Nikos.One.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Nikos.One.FileService">
+      <HintPath>..\packages\Nikos.One.FileService.1.0.0.0\lib\net451\Nikos.One.FileService.dll</HintPath>
+    </Reference>
+    <Reference Include="Nikos.One.ServiceContracts">
+      <HintPath>..\packages\Nikos.One.ServiceContracts.1.0.5565.37411\lib\net451\Nikos.One.ServiceContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Nikos.One.ServiceModel.Client">
+      <HintPath>..\packages\Nikos.One.ServiceModel.Client.1.0.5565.37412\lib\net451\Nikos.One.ServiceModel.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Nikos.Toolbelt">
+      <HintPath>..\packages\Nikos.Toolbelt.1.0.5559.1494\lib\net451\Nikos.Toolbelt.dll</HintPath>
+    </Reference>
+    <Reference Include="Nikos.Toolbelt.Compilers">
+      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.5559.4317\lib\net451\Nikos.Toolbelt.Compilers.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Spatial, Version=5.6.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -122,6 +158,7 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Content>
+    <Content Include="StateMachine\stateMachine.xml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -166,10 +203,6 @@
       <Project>{7a096d62-ff9b-4b45-b857-930e2fbf7577}</Project>
       <Name>Nikos.One.DefaultImplementation</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Nikos.One\Nikos.One.csproj">
-      <Project>{65DB8192-2E77-4C69-AC83-2B044496A355}</Project>
-      <Name>Nikos.One</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Nikos.Toolbelt.Azure\Nikos.Toolbelt.Azure.csproj">
       <Project>{f250ac02-e4b6-423f-96f0-a53d8486736e}</Project>
       <Name>Nikos.Toolbelt.Azure</Name>
@@ -177,14 +210,6 @@
     <ProjectReference Include="..\Nikos.Toolbelt.Loggers.Log4Net\Nikos.Toolbelt.Loggers.Log4Net.csproj">
       <Project>{CBD35D74-7629-4811-80CC-69F4A1091EA3}</Project>
       <Name>Nikos.Toolbelt.Loggers.Log4Net</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Nikos.Toolbelt\Nikos.Toolbelt.csproj">
-      <Project>{FE2C8525-514A-4802-AEBE-15639AE39298}</Project>
-      <Name>Nikos.Toolbelt</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Services\WCF\Nikos.One.FileService\Nikos.One.FileService.csproj">
-      <Project>{1BE0A5D7-DADB-4332-B5A1-777DA4F97514}</Project>
-      <Name>Nikos.One.FileService</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
