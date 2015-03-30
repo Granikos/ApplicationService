@@ -240,12 +240,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nikos.One.Templating.Razor\Nikos.One.Templating.Razor.csproj">
-      <Project>{49a7fe53-2498-4141-90d9-c31cc26ca792}</Project>
-      <Name>Nikos.One.Templating.Razor</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>

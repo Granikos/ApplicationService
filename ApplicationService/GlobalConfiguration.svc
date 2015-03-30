@@ -1,1 +1,1 @@
-<%@ ServiceHost Language="C#" Debug="true" Service="Nikos.One.Services.GlobalConfigurationService" %>
+<%@ ServiceHost Language="C#" Debug="false" Service="Nikos.One.Services.GlobalConfigurationService, Nikos.One.GlobalConfigurationService" %>

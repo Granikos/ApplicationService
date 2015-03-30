@@ -1,1 +1,1 @@
-<%@ ServiceHost Language="C#" Debug="true" Service="Nikos.One.Services.CatalogService" %>
+<%@ ServiceHost Language="C#" Debug="false" Service="Nikos.One.Services.CatalogService, Nikos.One.CatalogService" %>

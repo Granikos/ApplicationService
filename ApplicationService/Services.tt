@@ -10,15 +10,18 @@
             "Information",
             "Catalog",
             "Order",
-            "Script",
+            "Script:Configuration",
             "GlobalConfiguration",
             };
 
     foreach(var service in services)
     {
-#><%@ ServiceHost Language="C#" Debug="true" Service="Nikos.One.Services.<#= service #>Service" %>   
+		var parts = service.Split(':');
+		var name = parts.First();
+		var assembly = parts.Last();
+#><%@ ServiceHost Language="C#" Debug="false" Service="Nikos.One.Services.<#= name #>Service, Nikos.One.<#= assembly #>Service" %>   
 <#
-        WriteToFile(service + ".svc");
+        WriteToFile(name + ".svc");
     }
 
 Cleanup();

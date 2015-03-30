@@ -1,0 +1,133 @@
+<#@ template hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(SolutionDir)\Dependencies\MunirHusseini.TypeAnalyzer.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="MunirHusseini.TypeAnalyzer" #>
+<#+
+string ViewModelSuffix = "";
+
+protected string GetModelTypeConstructor(MunirHusseini.TypeAnalyzer.Type type)
+{
+	var modelType = type.CodeFullName;
+	return modelType.EndsWith("[]")
+			? "new " + modelType.Substring(0, modelType.Length - 2) + "[0]"
+			: "new " + modelType + "()";
+}
+
+protected string GetViewModelTypeConstructor(MunirHusseini.TypeAnalyzer.Type type)
+{
+	var modelType = GetViewModelType(type);
+	return modelType.EndsWith("[]") 
+			? "new " + modelType.Substring(0, modelType.Length - 2) + "[0]"
+			: "new " + modelType + "()";
+}
+
+protected string GetViewModelType(MunirHusseini.TypeAnalyzer.Type type)
+{
+	string propertyType;
+
+	if(type.IsArray && type.FullName != "System.Byte[]")
+    {
+		var innerType =  type.EnumerableInfo.ItemType.Namespace == "Nikos.One.ServiceContracts.Model.Response" ||
+							type.EnumerableInfo.ItemType.Namespace == "Nikos.One.ServiceContracts.Model.Request"
+			? type.EnumerableInfo.ItemType.CodeName 
+			: type.EnumerableInfo.ItemType.CodeFullName;
+		propertyType = string.Format("System.Collections.Generic.List<{0}>", innerType);
+    }
+	else
+	{
+		switch(type.FullName)
+        {
+			case "Nikos.One.ServiceContracts.Model.Data":
+				propertyType = "Nikos.Toolbelt.DynamicDictionary<object>";
+				break;
+			default:
+				propertyType = type.IsClass && (type.Namespace == "Nikos.One.ServiceContracts.Model.Response" ||
+								type.Namespace == "Nikos.One.ServiceContracts.Model.Request")
+								? type.CodeName + ViewModelSuffix
+								: type.CodeFullName;
+				break;
+        }
+    }
+
+	return propertyType;
+}
+
+protected string GetToModelCopier(MunirHusseini.TypeAnalyzer.Type type)
+{
+	string copier;
+
+	if(type.IsArray && type.FullName != "System.Byte[]")
+    {
+		if (type.EnumerableInfo.ItemType.Namespace == "Nikos.One.ServiceContracts.Model.Response" ||
+			type.EnumerableInfo.ItemType.Namespace == "Nikos.One.ServiceContracts.Model.Request")
+		{
+			copier = ".Select(i => i.ToModel()).ToArray()";
+        }
+		else
+		{
+			copier = ".ToArray()";
+        }
+    }
+	else if(type.IsClass && (type.Namespace == "Nikos.One.ServiceContracts.Model.Response" || 
+			type.Namespace == "Nikos.One.ServiceContracts.Model.Request"))
+    {
+		copier = ".ToModel()";
+    }
+	else
+	{
+		switch(type.FullName)
+        {
+			case "Nikos.One.ServiceContracts.Model.Data":
+				copier = ".ToModel()";
+				break;
+			default:
+				copier = "";
+				break;
+        }
+    }
+
+	return copier;
+}
+
+protected string GetToViewModelCopier(MunirHusseini.TypeAnalyzer.Type type)
+{
+	string copier;
+
+	if(type.IsArray && type.FullName != "System.Byte[]")
+    {
+		if(type.EnumerableInfo.ItemType.Namespace ==  "Nikos.One.ServiceContracts.Model.Response" ||
+			type.EnumerableInfo.ItemType.Namespace == "Nikos.One.ServiceContracts.Model.Request")
+		{
+			copier = ".Select(i => i.ToViewModel()).ToList()";
+        }
+		else
+		{
+			copier = ".ToList()";
+        }
+    }
+	else if(type.IsClass && (type.Namespace == "Nikos.One.ServiceContracts.Model.Response" || 
+			type.Namespace == "Nikos.One.ServiceContracts.Model.Request"))
+    {
+		copier = ".ToViewModel()";
+    }
+	else
+	{
+		switch(type.FullName)
+        {
+			case "Nikos.One.ServiceContracts.Model.Data":
+				copier = ".ToViewModel()";
+				break;
+			default:
+				copier = "";
+				break;
+        }
+    }
+
+	return copier;
+}
+#>

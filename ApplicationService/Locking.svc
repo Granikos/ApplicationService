@@ -1,1 +1,1 @@
-<%@ ServiceHost Language="C#" Debug="true" Service="Nikos.One.Services.LockingService" %>
+<%@ ServiceHost Language="C#" Debug="false" Service="Nikos.One.Services.LockingService, Nikos.One.LockingService" %>
