@@ -14,14 +14,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{244877
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Azure|Any CPU = Azure|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA052349-3073-4314-8ED6-630BD72DF845}.Azure|Any CPU.ActiveCfg = Azure|Any CPU
+		{EA052349-3073-4314-8ED6-630BD72DF845}.Azure|Any CPU.Build.0 = Azure|Any CPU
 		{EA052349-3073-4314-8ED6-630BD72DF845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EA052349-3073-4314-8ED6-630BD72DF845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA052349-3073-4314-8ED6-630BD72DF845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA052349-3073-4314-8ED6-630BD72DF845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BEDF771-61D7-421A-802D-BF37FAB0A9AE}.Azure|Any CPU.ActiveCfg = Azure|Any CPU
+		{0BEDF771-61D7-421A-802D-BF37FAB0A9AE}.Azure|Any CPU.Build.0 = Azure|Any CPU
 		{0BEDF771-61D7-421A-802D-BF37FAB0A9AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0BEDF771-61D7-421A-802D-BF37FAB0A9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BEDF771-61D7-421A-802D-BF37FAB0A9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
