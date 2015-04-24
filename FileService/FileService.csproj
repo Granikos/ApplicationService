@@ -52,24 +52,24 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nikos.Toolbelt.1.0.5567.4484\lib\net451\Ionic.Zip.dll</HintPath>
+      <HintPath>..\packages\Nikos.Toolbelt.1.0.90\lib\net451\Ionic.Zip.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CodeAnalysis, Version=0.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.5567.4486\lib\net451\Microsoft.CodeAnalysis.dll</HintPath>
+      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.90\lib\net451\Microsoft.CodeAnalysis.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=0.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.5567.4486\lib\net451\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.90\lib\net451\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces, Version=0.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.5567.4486\lib\net451\Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
+      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.90\lib\net451\Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CodeAnalysis.Workspaces, Version=0.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.5567.4486\lib\net451\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.90\lib\net451\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp">
       <Private>True</Private>
@@ -110,36 +110,37 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Nikos.One, Version=1.0.5567.2840, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nikos.One.1.0.5567.2840\lib\net451\Nikos.One.dll</HintPath>
-    </Reference>
-    <Reference Include="Nikos.One.Client, Version=1.0.5567.2839, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nikos.One.Client.1.0.5567.2839\lib\net451\Nikos.One.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Nikos.One.FileService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.One.FileService.1.0.29\lib\net451\Nikos.One.FileService.dll</HintPath>
+    <Reference Include="Nikos.One, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nikos.One.1.0.187\lib\net451\Nikos.One.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Nikos.One.ServiceContracts, Version=1.0.5567.2838, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nikos.One.ServiceContracts.1.0.5567.2838\lib\net451\Nikos.One.ServiceContracts.dll</HintPath>
+    <Reference Include="Nikos.One.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nikos.One.Client.1.0.187\lib\net451\Nikos.One.Client.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Nikos.One.ServiceModel">
-      <HintPath>..\packages\Nikos.One.ServiceModel.1.0.5567.1851\lib\net451\Nikos.One.ServiceModel.dll</HintPath>
+    <Reference Include="Nikos.One.FileService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nikos.One.FileService.1.0.36\lib\net451\Nikos.One.FileService.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Nikos.One.ServiceModel.Client, Version=1.0.5567.2839, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nikos.One.ServiceModel.Client.1.0.5567.2839\lib\net451\Nikos.One.ServiceModel.Client.dll</HintPath>
+    <Reference Include="Nikos.One.ServiceContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nikos.One.ServiceContracts.1.0.187\lib\net451\Nikos.One.ServiceContracts.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Nikos.Toolbelt, Version=1.0.5567.4484, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nikos.Toolbelt.1.0.5567.4484\lib\net451\Nikos.Toolbelt.dll</HintPath>
+    <Reference Include="Nikos.One.ServiceModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nikos.One.ServiceModel.1.0.36\lib\net451\Nikos.One.ServiceModel.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Nikos.Toolbelt.Compilers, Version=1.0.5567.4486, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.5567.4486\lib\net451\Nikos.Toolbelt.Compilers.dll</HintPath>
+    <Reference Include="Nikos.One.ServiceModel.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nikos.One.ServiceModel.Client.1.0.187\lib\net451\Nikos.One.ServiceModel.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nikos.Toolbelt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nikos.Toolbelt.1.0.90\lib\net451\Nikos.Toolbelt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nikos.Toolbelt.Compilers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.90\lib\net451\Nikos.Toolbelt.Compilers.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="saxon9he-api, Version=9.6.0.5, Culture=neutral, PublicKeyToken=e1fdd002d5083fe6, processorArchitecture=MSIL">
       <HintPath>..\packages\Saxon-HE.9.6.0.5\lib\net40\saxon9he-api.dll</HintPath>
@@ -195,7 +196,9 @@
       <LastGenOutput>Services.txt</LastGenOutput>
     </Content>
     <Content Include="log4net.config" />
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\InstallerPackage.pubxml" />
     <None Include="Properties\PublishProfiles\SimpleFile.pubxml" />
     <None Include="Web.Debug.config">
