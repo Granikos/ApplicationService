@@ -114,54 +114,6 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Nikos.One, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.One.1.0.190\lib\net451\Nikos.One.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Nikos.One.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.One.Client.1.0.189\lib\net451\Nikos.One.Client.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Nikos.One.DefaultImplementation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.One.DefaultImplementation.1.0.189\lib\net451\Nikos.One.DefaultImplementation.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Nikos.One.FileService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.One.FileService.1.0.38\lib\net451\Nikos.One.FileService.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Nikos.One.Modules.DatabaseFileStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.One.Modules.DatabaseFileStore.1.0.38\lib\net451\Nikos.One.Modules.DatabaseFileStore.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Nikos.One.Modules.SqlDataStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.One.Modules.SqlDataStore.1.0.38\lib\net451\Nikos.One.Modules.SqlDataStore.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Nikos.One.ServiceContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.One.ServiceContracts.1.0.189\lib\net451\Nikos.One.ServiceContracts.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Nikos.One.ServiceModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.One.ServiceModel.1.0.37\lib\net451\Nikos.One.ServiceModel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Nikos.One.ServiceModel.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.One.ServiceModel.Client.1.0.189\lib\net451\Nikos.One.ServiceModel.Client.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Nikos.Toolbelt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.Toolbelt.1.0.92\lib\net451\Nikos.Toolbelt.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Nikos.Toolbelt.Compilers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.Toolbelt.Compilers.1.0.92\lib\net451\Nikos.Toolbelt.Compilers.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Nikos.Toolbelt.Loggers.Log4Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nikos.Toolbelt.Loggers.Log4Net.1.0.91\lib\net451\Nikos.Toolbelt.Loggers.Log4Net.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="saxon9he-api, Version=9.6.0.5, Culture=neutral, PublicKeyToken=e1fdd002d5083fe6, processorArchitecture=MSIL">
       <HintPath>..\packages\Saxon-HE.9.6.0.5\lib\net40\saxon9he-api.dll</HintPath>
       <Private>True</Private>
@@ -229,16 +181,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Components\Nikos.One.Modules.FileSystemFileStore\Nikos.One.Modules.FileSystemFileStore.csproj">
-      <Project>{67A7E94E-3772-4191-B36C-92C8B1A18D5C}</Project>
-      <Name>Nikos.One.Modules.FileSystemFileStore</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Nikos.Toolbelt.Azure\Nikos.Toolbelt.Azure.csproj">
-      <Project>{f250ac02-e4b6-423f-96f0-a53d8486736e}</Project>
-      <Name>Nikos.Toolbelt.Azure</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
