@@ -52,75 +52,74 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Client.1.0.9\lib\net451\Giri.Client.dll</HintPath>
+      <HintPath>..\packages\Giri.Client.1.0.23\lib\net451\Giri.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Client.ServiceModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Client.ServiceModel.1.0.9\lib\net451\Giri.Client.ServiceModel.dll</HintPath>
+      <HintPath>..\packages\Giri.Client.ServiceModel.1.0.23\lib\net451\Giri.Client.ServiceModel.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Modules.DatabaseFileStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Modules.DatabaseFileStore.1.0.6\lib\net451\Giri.Modules.DatabaseFileStore.dll</HintPath>
+      <HintPath>..\packages\Giri.Modules.DatabaseFileStore.1.0.8\lib\net451\Giri.Modules.DatabaseFileStore.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Modules.SqlDataStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Modules.SqlDataStore.1.0.6\lib\net451\Giri.Modules.SqlDataStore.dll</HintPath>
+      <HintPath>..\packages\Giri.Modules.SqlDataStore.1.0.8\lib\net451\Giri.Modules.SqlDataStore.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Server.1.0.9\lib\net451\Giri.Server.dll</HintPath>
+      <HintPath>..\packages\Giri.Server.1.0.23\lib\net451\Giri.Server.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Server.DefaultImplementation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Server.DefaultImplementation.1.0.9\lib\net451\Giri.Server.DefaultImplementation.dll</HintPath>
+      <HintPath>..\packages\Giri.Server.DefaultImplementation.1.0.23\lib\net451\Giri.Server.DefaultImplementation.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Server.ServiceModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Server.ServiceModel.1.0.2\lib\net451\Giri.Server.ServiceModel.dll</HintPath>
+      <HintPath>..\packages\Giri.Server.ServiceModel.1.0.4\lib\net451\Giri.Server.ServiceModel.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.ServiceContracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.ServiceContracts.1.0.9\lib\net451\Giri.ServiceContracts.dll</HintPath>
+      <HintPath>..\packages\Giri.ServiceContracts.1.0.23\lib\net451\Giri.ServiceContracts.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Services.File.Wcf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Services.File.Wcf.1.0.2\lib\net451\Giri.Services.File.Wcf.dll</HintPath>
+      <HintPath>..\packages\Giri.Services.File.Wcf.1.0.4\lib\net451\Giri.Services.File.Wcf.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Toolbelt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Toolbelt.1.0.7\lib\net451\Giri.Toolbelt.dll</HintPath>
+      <HintPath>..\packages\Giri.Toolbelt.1.0.45\lib\net451\Giri.Toolbelt.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Toolbelt.Compilers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Toolbelt.Compilers.1.0.7\lib\net451\Giri.Toolbelt.Compilers.dll</HintPath>
+      <HintPath>..\packages\Giri.Toolbelt.Compilers.1.0.45\lib\net451\Giri.Toolbelt.Compilers.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Toolbelt.Loggers.Log4Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Toolbelt.Loggers.Log4Net.1.0.7\lib\net451\Giri.Toolbelt.Loggers.Log4Net.dll</HintPath>
+      <HintPath>..\packages\Giri.Toolbelt.Loggers.Log4Net.1.0.45\lib\net451\Giri.Toolbelt.Loggers.Log4Net.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Toolbelt.1.0.7\lib\net451\Ionic.Zip.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\packages\Giri.Toolbelt.1.0.45\lib\net451\Ionic.Zip.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis, Version=0.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Toolbelt.Compilers.1.0.7\lib\net451\Microsoft.CodeAnalysis.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Giri.Toolbelt.Compilers.1.0.45\lib\net451\Microsoft.CodeAnalysis.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=0.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Toolbelt.Compilers.1.0.7\lib\net451\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Giri.Toolbelt.Compilers.1.0.45\lib\net451\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces, Version=0.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Toolbelt.Compilers.1.0.7\lib\net451\Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Giri.Toolbelt.Compilers.1.0.45\lib\net451\Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis.Workspaces, Version=0.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Toolbelt.Compilers.1.0.7\lib\net451\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis.Workspaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Giri.Toolbelt.Compilers.1.0.45\lib\net451\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp">

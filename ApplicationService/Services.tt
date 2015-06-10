@@ -19,7 +19,7 @@
 		var parts = service.Split(':');
 		var name = parts.First();
 		var assembly = parts.Last();
-#><%@ ServiceHost Language="C#" Debug="false" Service="Nikos.One.Services.<#= name #>Service, Nikos.One.<#= assembly #>Service" %>   
+#><%@ ServiceHost Language="C#" Debug="false" Service="Nikos.One.Services.<#= name #>Service, Giri.Services.<#= assembly #>.Wcf" %>   
 <#
         WriteToFile(name + ".svc");
     }
