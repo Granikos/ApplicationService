@@ -68,7 +68,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Server.1.0.23\lib\net451\Giri.Server.dll</HintPath>
+      <HintPath>..\packages\Giri.Server.1.0.27\lib\net451\Giri.Server.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Server.DefaultImplementation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
