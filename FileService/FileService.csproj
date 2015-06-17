@@ -96,7 +96,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Giri.Toolbelt.Loggers.Log4Net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a669ea5937f7fe6b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Giri.Toolbelt.Loggers.Log4Net.1.0.45\lib\net451\Giri.Toolbelt.Loggers.Log4Net.dll</HintPath>
+      <HintPath>..\packages\Giri.Toolbelt.Loggers.Log4Net.1.0.49\lib\net451\Giri.Toolbelt.Loggers.Log4Net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ionic.Zip">
@@ -161,8 +161,8 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="saxon9he-api, Version=9.6.0.5, Culture=neutral, PublicKeyToken=e1fdd002d5083fe6, processorArchitecture=MSIL">
-      <HintPath>..\packages\Saxon-HE.9.6.0.5\lib\net40\saxon9he-api.dll</HintPath>
+    <Reference Include="saxon9he-api, Version=9.6.0.6, Culture=neutral, PublicKeyToken=e1fdd002d5083fe6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Saxon-HE.9.6.0.6\lib\net40\saxon9he-api.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
